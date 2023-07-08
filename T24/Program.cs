@@ -8,7 +8,7 @@ int Summa(int num)
     for (int i = 1; i <= num; i ++)
     {
         // Console.WriteLine($"{count, 3}   {count * count * count, 9}");
-        result = result + i;
+        result = result + i; // result += i;
     }
     return result;
 }

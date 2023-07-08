@@ -4,13 +4,13 @@
 // =======================
 int CountDigit(int num)
 {
-    int result = 1;
+    int result = 0;
     while (num != 0)
     {
         num = num / 10;
-        if (num != 0) result += 1; 
+        result += 1; 
     }
-    return result;
+    return result == 0 ? 1 : result;
 }
 // =======================
 

@@ -13,9 +13,14 @@ int Faktorial(int num)
 }
 // =======================
 
-Console.WriteLine("Введите целое число:");
+Console.WriteLine("Введите целое положительное число:");
 Console.Write("N = ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int N = Faktorial(number);
-Console.WriteLine($"Факториал числа {number} = {N}");
+if (number > 0)
+{
+    int N = Faktorial(number);
+    Console.WriteLine($"Факториал числа {number} = {N}");
+}
+else 
+Console.WriteLine("Ошибка ввода");
